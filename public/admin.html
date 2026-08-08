@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Admin Dashboard - RungzitMail</title>
+    <title>Admin Dashboard - XilawMail</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -40,7 +40,7 @@
                 <div class="w-9 h-9 bg-gradient-to-tr from-gray-950 to-gray-950 rounded-xl flex items-center justify-center mr-3 shadow-lg shadow-red-200">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 </div>
-                <span class="text-xl font-extrabold text-slate-900 tracking-tight">RungzitMail</span>
+                <span class="text-xl font-extrabold text-slate-900 tracking-tight">xilawMail</span>
             </div>
             
             <nav class="flex-1 px-4 py-8 space-y-2 overflow-y-auto">
@@ -85,7 +85,7 @@
                     <div class="w-8 h-8 bg-gradient-to-tr from-gray-950 to-gray-950 rounded-lg flex items-center justify-center shadow-md shadow-red-200">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
-                    <span class="text-lg font-extrabold text-slate-900">RungzitMail</span>
+                    <span class="text-lg font-extrabold text-slate-900">xilawMail</span>
                 </div>
                 <button onclick="logout()" class="text-slate-400 hover:text-rose-600 p-2 transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
@@ -115,7 +115,7 @@
                                     </div>
                                     <input id="inspectEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 pl-11 py-3.5 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all" placeholder="Ketik nama user..." autocomplete="off" />
                                     <div class="bg-slate-50 border border-l-0 border-slate-200 rounded-r-2xl px-4 sm:px-5 flex items-center text-[13px] sm:text-sm font-extrabold text-slate-400 shrink-0">
-                                        @rungzit.me
+                                        @xilaw.me
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
                                 <div class="flex shadow-sm rounded-2xl group focus-within:ring-4 focus-within:ring-red-500/20 transition-all">
                                     <input id="newEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 px-5 py-4 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all bg-slate-50/50 focus:bg-white" placeholder="namauser" autocomplete="off" />
                                     <div class="bg-slate-100 border border-l-0 border-slate-200 rounded-r-2xl px-4 sm:px-5 flex items-center text-[13px] sm:text-sm font-extrabold text-slate-400 shrink-0">
-                                        @rungzit.me
+                                        @xilaw.me
                                     </div>
                                 </div>
                             </div>
@@ -577,7 +577,7 @@
             }
 
             // GANTI KE DOMAIN BARU
-            const email = emailPrefix + "@rungzit.me";
+            const email = emailPrefix + "@xilaw.me";
 
             setLoading(true);
             try {
@@ -673,7 +673,7 @@
             if (!prefix) return;
 
             // GANTI KE DOMAIN BARU
-            const email = prefix + "@rungzit.me";
+            const email = prefix + "@xilaw.me";
 
             try {
                 const res = await fetch(API_BASE + "/api/admin/messages?email=" + encodeURIComponent(email), { headers: authHeaders() });
