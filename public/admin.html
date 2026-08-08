@@ -105,7 +105,7 @@
                     </div>
                     
                     <div class="bg-white rounded-[2rem] shadow-sm border border-slate-100 flex flex-col flex-1 overflow-hidden min-h-[500px]">
-                        <!-- Area Input Pencarian (Update Domain ke @ababilpedia.web.id) -->
+                        <!-- Area Input Pencarian (Update Domain ke @ababilpedia.me) -->
                         <div class="p-5 sm:p-7 border-b border-slate-100 bg-white shrink-0">
                             <label class="block text-sm font-bold text-slate-700 mb-3 ml-1">Cari Akun Pengguna</label>
                             <div class="flex flex-col sm:flex-row gap-3">
@@ -115,7 +115,7 @@
                                     </div>
                                     <input id="inspectEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 pl-11 py-3.5 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all" placeholder="Ketik nama user..." autocomplete="off" />
                                     <div class="bg-slate-50 border border-l-0 border-slate-200 rounded-r-2xl px-4 sm:px-5 flex items-center text-[13px] sm:text-sm font-extrabold text-slate-400 shrink-0">
-                                        @rungzit.web.id
+                                        @rungzit.me
                                     </div>
                                 </div>
                             </div>
@@ -178,13 +178,13 @@
                         </div>
                         <div class="space-y-5">
                             
-                            <!-- Input Email Otomatis Prefix (Update Domain ke @ababilpedia.web.id) -->
+                            <!-- Input Email Otomatis Prefix (Update Domain ke @ababilpedia.me) -->
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2 ml-1">Nama Pengguna Baru</label>
                                 <div class="flex shadow-sm rounded-2xl group focus-within:ring-4 focus-within:ring-red-500/20 transition-all">
                                     <input id="newEmailPrefix" type="text" class="w-full rounded-l-2xl border border-r-0 border-slate-200 px-5 py-4 text-sm font-bold text-slate-900 focus:border-red-500 outline-none transition-all bg-slate-50/50 focus:bg-white" placeholder="namauser" autocomplete="off" />
                                     <div class="bg-slate-100 border border-l-0 border-slate-200 rounded-r-2xl px-4 sm:px-5 flex items-center text-[13px] sm:text-sm font-extrabold text-slate-400 shrink-0">
-                                        @rungzit.web.id
+                                        @rungzit.me
                                     </div>
                                 </div>
                             </div>
@@ -577,7 +577,7 @@
             }
 
             // GANTI KE DOMAIN BARU
-            const email = emailPrefix + "@rungzit.web.id";
+            const email = emailPrefix + "@rungzit.me";
 
             setLoading(true);
             try {
@@ -673,7 +673,7 @@
             if (!prefix) return;
 
             // GANTI KE DOMAIN BARU
-            const email = prefix + "@rungzit.web.id";
+            const email = prefix + "@rungzit.me";
 
             try {
                 const res = await fetch(API_BASE + "/api/admin/messages?email=" + encodeURIComponent(email), { headers: authHeaders() });
